@@ -22,6 +22,10 @@
 		70970AD921E6A64700E9CC8B /* QueueIntegrationTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70970AD821E6A64700E9CC8B /* QueueIntegrationTest.swift */; };
 		70F6980521EF17D600D1E7A1 /* ConsumersIntegrationTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F6980421EF17D600D1E7A1 /* ConsumersIntegrationTest.swift */; };
 		70FC58B121DF4DB900BB25CB /* ChannelIntegrationTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FC58B021DF4DB900BB25CB /* ChannelIntegrationTest.swift */; };
+		8C05B82F27B50EEE00E7C95E /* JKVValue.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C05B82E27B50EEE00E7C95E /* JKVValue.xcframework */; };
+		8C05B83027B50EEE00E7C95E /* JKVValue.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8C05B82E27B50EEE00E7C95E /* JKVValue.xcframework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8CF551E227B512FC00630CC1 /* CocoaAsyncSocket.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF551E127B512FC00630CC1 /* CocoaAsyncSocket.xcframework */; };
+		8CF551E327B512FC00630CC1 /* CocoaAsyncSocket.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF551E127B512FC00630CC1 /* CocoaAsyncSocket.xcframework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		AE05DA681C69EC47009E68C7 /* RMQChannelAllocator.h in Headers */ = {isa = PBXBuildFile; fileRef = AE05DA661C69EC47009E68C7 /* RMQChannelAllocator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AE05DA6C1C6A0848009E68C7 /* RMQMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = AE05DA6A1C6A0848009E68C7 /* RMQMessage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AE05DA6D1C6A0848009E68C7 /* RMQMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = AE05DA6B1C6A0848009E68C7 /* RMQMessage.m */; };
@@ -234,6 +238,21 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		8C05B83127B50EEE00E7C95E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				8C05B83027B50EEE00E7C95E /* JKVValue.xcframework in Embed Frameworks */,
+				8CF551E327B512FC00630CC1 /* CocoaAsyncSocket.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		1029A0E12087A97E00C72924 /* ConnectionDeadlockTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectionDeadlockTests.swift; sourceTree = "<group>"; };
 		70311B0A21ED538600AE1804 /* RMQConnectionDefaults.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RMQConnectionDefaults.h; sourceTree = "<group>"; };
@@ -248,6 +267,8 @@
 		70970AD821E6A64700E9CC8B /* QueueIntegrationTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueIntegrationTest.swift; sourceTree = "<group>"; };
 		70F6980421EF17D600D1E7A1 /* ConsumersIntegrationTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsumersIntegrationTest.swift; sourceTree = "<group>"; };
 		70FC58B021DF4DB900BB25CB /* ChannelIntegrationTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelIntegrationTest.swift; sourceTree = "<group>"; };
+		8C05B82E27B50EEE00E7C95E /* JKVValue.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = JKVValue.xcframework; path = Carthage/Build/JKVValue.xcframework; sourceTree = "<group>"; };
+		8CF551E127B512FC00630CC1 /* CocoaAsyncSocket.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = CocoaAsyncSocket.xcframework; path = Carthage/Build/CocoaAsyncSocket.xcframework; sourceTree = "<group>"; };
 		AE05DA661C69EC47009E68C7 /* RMQChannelAllocator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMQChannelAllocator.h; sourceTree = "<group>"; };
 		AE05DA6A1C6A0848009E68C7 /* RMQMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMQMessage.h; sourceTree = "<group>"; };
 		AE05DA6B1C6A0848009E68C7 /* RMQMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMQMessage.m; sourceTree = "<group>"; };
@@ -449,6 +470,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C05B82F27B50EEE00E7C95E /* JKVValue.xcframework in Frameworks */,
+				8CF551E227B512FC00630CC1 /* CocoaAsyncSocket.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -469,6 +492,15 @@
 				70970AD621E68DC900E9CC8B /* IntegrationHelper.swift */,
 			);
 			name = Helpers;
+			sourceTree = "<group>";
+		};
+		8C05B82D27B50EEE00E7C95E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8CF551E127B512FC00630CC1 /* CocoaAsyncSocket.xcframework */,
+				8C05B82E27B50EEE00E7C95E /* JKVValue.xcframework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		AE26FA2F1C970E9A00CDBBAA /* Channels */ = {
@@ -776,6 +808,7 @@
 				AEE7FE9F1C3BCA6000DF8C4F /* RMQClientTests */,
 				AEA45ED81C440FE400FE1F62 /* RMQClientIntegrationTests */,
 				AEE7FE921C3BCA6000DF8C4F /* Products */,
+				8C05B82D27B50EEE00E7C95E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -991,12 +1024,15 @@
 				AEE7FE8D1C3BCA6000DF8C4F /* Frameworks */,
 				AEE7FE8E1C3BCA6000DF8C4F /* Headers */,
 				AEE7FE8F1C3BCA6000DF8C4F /* Resources */,
+				8C05B83127B50EEE00E7C95E /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = RMQClient;
+			packageProductDependencies = (
+			);
 			productName = RMQClient;
 			productReference = AEE7FE911C3BCA6000DF8C4F /* RMQClient.framework */;
 			productType = "com.apple.product-type.framework";
@@ -1052,6 +1088,8 @@
 				Base,
 			);
 			mainGroup = AEE7FE871C3BCA6000DF8C4F;
+			packageReferences = (
+			);
 			productRefGroup = AEE7FE921C3BCA6000DF8C4F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -1130,14 +1168,14 @@
 			files = (
 			);
 			inputPaths = (
-				CocoaAsyncSocket,
 				JKVValue,
 			);
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "case \"$PLATFORM_NAME\" in\nmacosx) plat=Mac;;\niphone*) plat=iOS;;\n*) echo \\\"error: Unknown PLATFORM_NAME: $PLATFORM_NAME\\\"; exit 1;;\nesac\nfor (( n = 0; n < SCRIPT_INPUT_FILE_COUNT; n++ )); do\nVAR=SCRIPT_INPUT_FILE_$n\nframework=$(basename \"${!VAR}\")\nexport SCRIPT_INPUT_FILE_$n=\"$SRCROOT\"/Carthage/Build/$plat/\"$framework\".framework\ndone\n\necho \"Copying frameworks\"\nfor (( n = 0; n < SCRIPT_INPUT_FILE_COUNT; n++ )); do\nVAR=SCRIPT_INPUT_FILE_$n\nsource=${!VAR}\ndest=${BUILT_PRODUCTS_DIR}/$(basename \"$source\")\necho \"$source => $dest\"\nditto \"$source\" \"$dest\" || exit\ndone\n\necho \"Copying debug symbols\"\nfor (( n = 0; n < SCRIPT_INPUT_FILE_COUNT; n++ )); do\nVAR=SCRIPT_INPUT_FILE_$n\nsource=${!VAR}.dSYM\ndest=${BUILT_PRODUCTS_DIR}/$(basename \"$source\")\necho \"$source => $dest\"\nditto \"$source\" \"$dest\" || exit\ndone\n";
+			shellScript = "
+";
 		};
 /* End PBXShellScriptBuildPhase section */
 
